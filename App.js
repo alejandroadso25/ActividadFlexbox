@@ -2,7 +2,7 @@
 import { StatusBar } from 'expo-status-bar';
 
 // Componentes básicos de React Native para UI táctil y texto.
-import { Pressable, Text, View } from 'react-native';
+import { Image, Pressable, Text, View } from 'react-native';
 
 // Estilos separados en un archivo externo.
 import styles from './App.styles';
@@ -24,8 +24,12 @@ export default function App() {
         {/* Avatar y área superior */}
         <View style={styles.avatarWrapper}>
           <View style={styles.avatarBackground}>
-            <View style={styles.avatarHead} />
-            <View style={styles.avatarBody} />
+            {/* Imagen real del avatar del perfil */}
+            <Image
+              source={require('./assets/avatar.png')}
+              style={styles.avatarImage}
+              resizeMode="cover"
+            />
           </View>
         </View>
 

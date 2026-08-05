@@ -43,23 +43,14 @@ export default StyleSheet.create({
     backgroundColor: '#327832',
     alignItems: 'center',
     justifyContent: 'center',
+    overflow: 'hidden',
   },
 
-  // Estilo de la parte superior del avatar.
-  avatarHead: {
-    width: 36,
-    height: 36,
-    borderRadius: 18,
-    backgroundColor: '#d9e7d7',
-    marginBottom: 8,
-  },
-
-  // Estilo de la parte inferior del avatar.
-  avatarBody: {
-    width: 56,
-    height: 32,
-    borderRadius: 16,
-    backgroundColor: '#d9e7d7',
+  // Estilo de la imagen del avatar.
+  avatarImage: {
+    width: 100,
+    height: 100,
+    borderRadius: 50,
   },
 
   // Estilo del nombre dentro de la tarjeta.
